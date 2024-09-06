@@ -49,6 +49,13 @@
   </section>
 
   <!-- Button to toggle chatbot -->
+  <button id="toggle-chatbot">Toggle Chatbot</button>
+
+  <!-- Chatbot iframe -->
+  <iframe id="chatbot-iframe"
+    src="https://cdn.botpress.cloud/webchat/v2/shareable.html?botId=b0290556-9846-4c80-9f00-bdd2381a5c0d"
+    style="width: 400px; height: 600px; display: none; border: none; position: fixed; bottom: 20px; right: 20px;">
+  </iframe>
 
   <!-- External application form -->
   <section id="external-form">
@@ -62,15 +69,16 @@
   <script src="Sih.js"></script> <!-- Ensure this path is correct -->
 
   <!-- Chatbot toggle script -->
-<script>
+  <script>
     document.getElementById("toggle-chatbot").addEventListener("click", function() {
       const chatbotIframe = document.getElementById("chatbot-iframe");
       if (chatbotIframe.style.display === "none") {
         chatbotIframe.style.display = "block";
       } else {
         chatbotIframe.style.display = "none";
-      }
-    });
+      }
+    });
+  </script>
 
 </body>
 </html>
